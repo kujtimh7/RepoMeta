@@ -1,0 +1,48 @@
+Script started on Wed Sep 30 17:27:46 2020
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ mkdir hh
+bash-3.2$ cd hh
+bash-3.2$ #We will now copy my github rep into this new directory [K
+bash-3.2$ svn co https://github.com/kujtimh7/SvnTesting
+A    SvnTesting/branches
+A    SvnTesting/trunk
+A    SvnTesting/trunk/README.md
+Checked out revision 1.
+bash-3.2$ #We will now go into the trunk branch where we can add a hiworld.java file
+bash-3.2$ cd SvnTesting/trunk
+bash-3.2$ vim HiWorld.java
+bash-3.2$ #We will now add and commit
+bash-3.2$ svn add HiWorld.java
+A         HiWorld.java
+bash-3.2$ svn comm [Kit 0m[K[K-,[K,[Km ""c"o" "m"[1P"[1P"m"m"i"t"t"i"n"g" "h"i"w"o"r"l"d"."j"a"v"a" "i"n" "[1P"t"o" "r"e"p"[C
+Adding         HiWorld.java
+Transmitting file data .done
+Committing transaction...
+Committed revision 2.
+bash-3.2$ #now we will see hiworld is now in the svnTesting file on GitHub
+bash-3.2$ svn list https://github.com/kujtimh7/SvnTesting/trunk
+HiWorld.java
+README.md
+bash-3.2$ #We now see hiWorld.java is there so now lets try changing it and updating
+bash-3.2$ ls
+HiWorld.java	README.md
+bash-3.2$ cim[K[K[Kvim HiWorld.java
+[?1049h[>4;2m[?1h=[?2004h[1;56r[?12h[?12l[22;2t[22;1t[27m[29m[m[H[2J[?25l[56;1H"HiWorld.java" 6L, 104C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1Hpublic class HiWorld {
+public static void main(String[] args) {[3;9HSystem.out.println("Hi world!");
+
+}
+}                                                                                                                                                                                 [m[56;1H"HiWorld.java" 6L, 104C[1;1H[?25h
+[3;8H[4;8H[3;8H [4;8H[3;8H System.out.printl[?25ln[46m([11C)[3;27H[?25h[?25l[m([11C)[3;28H[?25h"Hi world![?25l[56;1H[1m-- INSERT --[m[56;13H[K[3;37H[?25h[?25l,!");[?25h[?25l !");[?25h[?25li!");[?25h[?25lt!");[?25h[?25ls!");[?25h[?25l !");[?25h[?25la!");[?25h[?25l !");[?25h[?25lw!");[?25h[?25lo!");[?25h[?25ln!");[?25h[?25ld!");[?25h[?25le!");[?25h[?25lr!");[?25h[?25lf!");[?25h[?25lu!");[?25h[?25ll!");[?25h[?25l !");[?25h[?25ld!");[?25h[?25la!");[?25h[?25ly!");[?25h[?25l!!");[?25h![56;1H[K[3;59H[?25l[?25h[?25l[56;1H:[?2004h[?25hwq[?25l[?2004l"HiWorld.java" 6L, 126C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049lbash-3.2$ svn commit 0[K-m ""A"d"d"e"d" "'"'"i'"t'"[C'"s'" '"a'" '"w'"o'"n'"d'"e'"f'"u'"l'" '"d'"a'"y'"[C "t"o" "h"i"w"o"r"l"d"."j"a"v"a"[C
+Sending        HiWorld.java
+Transmitting file data .done
+Committing transaction...
+Committed revision 3.
+bash-3.2$ #We have successfully changed [K[K[K[K[K[K[K[Kchanged and updated hiworld [K.java!
+bash-3.2$ exit
+exit
+
+Script done on Wed Sep 30 17:36:58 2020
