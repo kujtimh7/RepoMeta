@@ -1,0 +1,67 @@
+Script started on Mon Oct  5 19:34:29 2020
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ cd desktop
+bash-3.2$ #First we will test hiWorld.java
+bash-3.2$ H[Kjavac HiWorld.java
+bash-3.2$ java HiWorld
+Hi world!
+bash-3.2$ mkdir Repo1
+bash-3.2$ #Now I made repo1 and will make it a git repository [K
+bash-3.2$ mv HiWorld.java Repo1/
+bash-3.2$ cd Repo1
+bash-3.2$ git init
+Initialized empty Git repository in /Users/KennyHakaj/Desktop/Repo1/.git/
+bash-3.2$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mHiWorld.java[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+bash-3.2$ git add HiWorld.java
+bash-3.2$ git sat[K[Ktatus
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	[32mnew file:   HiWorld.java[m
+
+bash-3.2$ #Now I will change HiWorld to also say it's a great day
+bash-3.2$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	[32mnew file:   HiWorld.java[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   HiWorld.java[m
+
+bash-3.2$ git commit -m ""A"d"d"e"d" "i"t"'"s" "a" "g"r"e"a"t" "d"a"y" "t"o" "H"i"W"o"r"l"d"."j"a"v"a"[C
+[master (root-commit) ca08df8] Added it's a great day to HiWorld.java
+ 1 file changed, 7 insertions(+)
+ create mode 100644 HiWorld.java
+bash-3.2$ git add HiWorld.java
+bash-3.2$ git sat[K[Ktatus
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   HiWorld.java[m
+
+bash-3.2$ #The changes have been commited [K!
+bash-3.2$ exit
+exit
+
+Script done on Mon Oct  5 19:40:38 2020
