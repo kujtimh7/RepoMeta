@@ -1,6 +1,6 @@
 # RepoMeta
-# GitHub
-I commited all changes to my HiWorld.java file and all the results are shown in git.txt
+# Git
+I commited all changes to my HiWorld.java file and all the results are shown in git.txt and showed it through the commits.
 
 # SVN
-For some reason I was having trouble with SVN when trying to connect to the git repository despite already doing it befrore. I'll try uploading remotely but if I'm unable to I'll just leave it how it is
+I did the same thing as in the Git test but forgot to show the files change, it still recognizes it however.
